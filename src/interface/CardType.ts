@@ -4,5 +4,5 @@ export type CardType = {
     price: string,
     changePercent: number,
     tvl: string,
-    pairings: Array<string>,
+    pairings: Array<string>,  
 }

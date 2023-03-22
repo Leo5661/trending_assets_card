@@ -13,7 +13,11 @@ module.exports = {
       "font_blue_light": "#5A5F7D",
       "red": "#FF4D4D",
       "green": "#00FFA3",
-      
+      // gradient color
+      "card_bg_start": "#2E31491A",
+      "card_bg_end": "#626A881A",
+      "border_start": "#2E3149",
+      "border_end": "#ECF0FF",
     },
     extend: {},
   },

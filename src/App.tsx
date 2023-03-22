@@ -1,6 +1,4 @@
-import { useState } from 'react'
 import { DataSets } from './datasets'
-import './App.css'
 import Card from './components/Card'
 
 function App() {
