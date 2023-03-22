@@ -12,7 +12,7 @@ function Card(props: CardType) {
             </div>
             <div className="mt-[-50px] min-w-[290px] min-h-[300px] bg-gradient-to-t from-card_bg_start to-card_bg_end rounded-xl border-t border-solid border-border_start flex justify-end gap-2 pb-8 md:pb-4 items-center flex-col px-6">
                 <div className="name text-xs md:text-sm font-Tomorrow text-font_blue">{props.name}</div>
-                <div className="realtime_price flex justify-around items-center w-full p-1 bg-blue rounded-full">
+                <div className="realtime_price flex justify-around items-center w-full p-1 bg-blue rounded-full border-t border-solid border-border_start">
                     <div className="price text-sm md:text-base font-Tomorrow place-items-end text-font_white">${props.price}</div>
                     <div className={`price_change srink text-xs font-Tomorrow ${Math.sign(props.changePercent) === -1 ? "text-red" : "text-green"}`}>
                         {
@@ -21,7 +21,7 @@ function Card(props: CardType) {
                     </div>
                 </div>
                 <div className="price_tag text-xs md:text-sm font-Tomorrow text-font_blue_light">Price</div>
-                <div className="tvl text-sm md:text-base flex justify-center text-font_white items-center w-full p-1 bg-blue rounded-full">${props.tvl}</div>
+                <div className="tvl text-sm md:text-base flex justify-center text-font_white items-center w-full p-1 bg-blue rounded-full border-t border-solid border-border_start">${props.tvl}</div>
                 <div className="tvl_tag text-xs md:text-sm font-Tomorrow text-font_blue_light">TVL</div>
                 <div className="pairs flex justify-around items-center w-6/12 p-2 bg-blue rounded-full">{
                     props.pairings.map((item, index) => {
