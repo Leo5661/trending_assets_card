@@ -1,14 +1,25 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { DataSets } from './datasets'
 import './App.css'
+import Card from './components/Card'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      hello world
+    <div className="App bg-blue w-full min-h-screen">
+      {DataSets.map((data, index) => {
+        return (
+          <Card 
+            key={index} 
+            logo={data.logo}
+            name={data.name} 
+            price={data.price} 
+            changePercent={data.changePercent} 
+            tvl={data.tvl} 
+            pairings={data.pairings} 
+            />
+        )
+      })}
     </div>
   )
 }
