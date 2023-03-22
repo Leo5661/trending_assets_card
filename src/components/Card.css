@@ -1,13 +1,6 @@
-.card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 .content {
-    margin-top: -50px;
-    background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(46, 49, 73, 0.1) 107.43%);
+    /* margin-top: -50px; */
+    /* background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(46, 49, 73, 0.1) 107.43%); */
     border-radius: 10px;
     border: 1px solid;
     border-image-source: linear-gradient(180deg, rgba(236, 240, 255, 0.1) 0%, rgba(46, 49, 73, 0) 107.43%);
@@ -15,19 +8,23 @@
     min-height: 300px;
 }
 
-.icon {
+.icon_sec {
     position: relative;
     background-color: #14172b;
-    z-index: 1000;
     width: 100px;
+    z-index: 1000;
     height: 100px;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
-    border: 1px solid;
-    border-image-source: linear-gradient(180deg, rgba(236, 240, 255, 0.1) 0%, rgba(46, 49, 73, 0) 107.43%);
 }
 
-.icon::before {
+.icon {
+    background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(237, 240, 244, 0.1) 100%),
+        linear-gradient(180deg, rgba(236, 240, 255, 0.1) 0%, rgba(59, 63, 87, 0) 100%);
+
+}
+
+.icon_sec::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -37,16 +34,21 @@
     width: 25px;
     box-shadow: 15px -15px 0 15px #14172b;
     border-top-right-radius: 50px;
+    border: 1px solid;
+    border-image-source: linear-gradient(180deg, rgba(236, 240, 255, 0.1) 0%, rgba(46, 49, 73, 0) 107.43%);
 }
 
-.icon::after {
+.icon_sec::after {
     content: "";
     position: absolute;
     bottom: 0;
+    z-index: -1;
     top: 50%;
     right: -20px;
     height: 25px;
     width: 25px;
     box-shadow: -15px -15px 0 15px #14172b;
+    border: 1px solid;
+    border-image-source: linear-gradient(180deg, rgba(236, 240, 255, 0.1) 0%, rgba(46, 49, 73, 0) 107.43%);
     border-top-left-radius: 50px;
 }
